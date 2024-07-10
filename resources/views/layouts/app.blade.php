@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{ isset($title) ? $title . ' - ' : null }}Laravel Bootcamp</title>
+        <title>{{ isset($title) ? $title . ' - ' : null }}{{ __('WASAL') }}</title>
 
         <!-- Primary Meta Tags -->
         <meta name="title" content="Laravel Bootcamp - Learn the PHP Framework for Web Artisans">

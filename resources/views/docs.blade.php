@@ -19,17 +19,17 @@
                             width="50"
                             height="52"
                         >
-                        <span class="hidden lg:block ml-4 text-red-500 text-3xl font-medium">Bootcamp</span>
+                        <span class="hidden lg:block ml-4 text-red-500 text-3xl font-medium">{{ __('WASAL') }}</span>
                     </a>
                     <div class="overflow-y-auto overflow-x-hidden px-4 lg:overflow-hidden lg:px-8 xl:px-16">
                         <nav id="indexed-nav" class="hidden lg:block lg:mt-4">
                             <div class="docs_sidebar">
-                                @include('documentation')
+                                @include(__('documentation'))
                             </div>
                         </nav>
                     </div>
                     <div class="flex-grow flex flex-col justify-end">
-                        @if ($page !== 'introduction')
+                        @if ($page !== __('introduction'))
                             <div class="hidden 2xl:block mb-12 pl-16">
                                 <x-cube delay="0" class="ml-8" />
                                 <x-cube delay="2000" class="mt-6 ml-32" />
@@ -50,7 +50,7 @@
                     <div class="mx-auto px-8 sm:px-16 flex items-center justify-between">
                         <a href="/" class="flex items-center">
                             <img class="" src="/img/logomark.min.svg" alt="Laravel">
-                            <span class="hidden sm:block ml-5 text-red-500 text-3xl font-medium">Bootcamp</span>
+                            <span class="hidden sm:block ml-5 text-red-500 text-3xl font-medium">{{ __('WASAL') }}</span>
                         </a>
                         <div class="flex-1 flex items-center justify-end">
                             <button id="header__sun" onclick="toSystemMode()" title="Switch to system theme" class="relative w-10 h-10 focus:outline-none focus:shadow-outline text-gray-500">
@@ -96,7 +96,7 @@
                         x-transition:leave-end="opacity-0 -translate-y-8 scale-75"
                     >
                         <div class="relative p-8 bg-white docs_sidebar dark:bg-dark-600">
-                            @include('documentation')
+                            @include(__('documentation'))
                         </div>
                     </nav>
                 </div>
@@ -130,14 +130,14 @@
                     <section class="pt-8 pb-8 md:pt-16 md:pb-16 flex">
                         <section class="docs_main flex-1 max-w-full">
                             <x-accessibility.main-content-wrapper>
-                                @if ($page === 'introduction')
+                                @if ($page === __('introduction'))
                                     <div class="max-w-prose">
                                         <div class="relative -mr-22 xl:-mr-44 mb-12 sm:mb-20 xl:flex xl:justify-between xl:items-center">
                                             <div>
                                                 <h1>
-                                                    <small class="text-xl font-medium leading-10 text-gray-900 dark:text-white">Learn the</small><br>
-                                                    <span class="mt-4 text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white">PHP Framework</span><br>
-                                                    <strong class="text-4xl sm:text-5xl font-bold text-red-600">for Web Artisans</strong>
+                                                    <small class="text-xl font-medium leading-10 text-gray-900 dark:text-white">{{ __('Learn the') }}</small><br>
+                                                    <span class="mt-4 text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white">{{ __('WASAL') }}</span><br>
+                                                    <strong class="text-4xl sm:text-5xl font-bold text-red-600">{{ __('Web Applications Security Analysis Laravel') }}</strong>
                                                 </h1>
                                                 <div class="mt-6 xl:mt-8 relative xl:static">
                                                     <x-cube delay="0" class="h-8 sm:h-auto absolute xl:bottom-0 left-0 mt-8 sm:mt-14 xl:mt-0 -ml-4 sm:ml-4 xl:-ml-14" />
@@ -152,15 +152,15 @@
                                                             <div class="flex-1">
                                                                 <div class="flex justify-between">
                                                                     <div>
-                                                                        <span class="text-sm font-medium sm:text-sm text-gray-800 dark:text-gray-200">Taylor Otwell</span>
+                                                                        <span class="text-sm font-medium sm:text-sm text-gray-800 dark:text-gray-200">{{ __('Jorge Pullas') }}</span>
                                                                         <br class="sm:hidden">
-                                                                        <small class="sm:ml-2 text-xs sm:text-sm text-gray-600 dark:text-gray-500">a few seconds ago</small>
+                                                                        <small class="sm:ml-2 text-xs sm:text-sm text-gray-600 dark:text-gray-500">{{ __('a few seconds ago') }}</small>
                                                                     </div>
                                                                     <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 ml-4 h-4 w-4 text-gray-400 dark:text-gray-600" viewBox="0 0 20 20" fill="currentColor">
                                                                         <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
                                                                     </svg>
                                                                 </div>
-                                                                <p class="mt-2 sm:mt-4 mr-1 sm:mr-0 text-sm sm:text-md text-gray-900 dark:text-gray-100">Let's build something with Laravel!</p>
+                                                                <p class="mt-2 sm:mt-4 mr-1 sm:mr-0 text-sm sm:text-md text-gray-900 dark:text-gray-100">{{ __('👋 Let\'s build something incredible and secure with Laravel!') }}</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -174,7 +174,6 @@
                                     @include($page)
                                 </div>
                                 <script>
-                                    // Set the active navigation state...
                                     Array.from(document.querySelectorAll('#header a, #sidebar a')).forEach(link => {
                                         if (link.hostname === location.hostname
                                             && (link.pathname === location.pathname || (link.pathname === '/introduction' && location.pathname === '/'))
@@ -186,7 +185,6 @@
                                         }
                                     })
 
-                                    // Make the navigation headings expandable...
                                     Array.from(document.querySelectorAll('.docs_sidebar h2')).forEach(el => {
                                         if (el.children.length > 1) {
                                             return
@@ -203,7 +201,6 @@
                                         })
                                     })
 
-                                    // Highlight the active section in the table of contents...
                                     function setActiveTableOfContents () {
                                         const links = Array.from(document.querySelectorAll('.table-of-contents a'))
                                         const lastVisible = links
@@ -243,41 +240,41 @@
                     </a>
                 </div>
                 <div class="mt-6 sm:mt-12">
-                    <p class="max-w-sm text-xs text-gray-700 sm:text-sm dark:text-gray-500">Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in most web projects.</p>
+                    <p class="max-w-sm text-xs text-gray-700 sm:text-sm dark:text-gray-500">{{ __('Web Application Security Analysis Laravel (ASAWL), is a comprehensive methodology designed to assess and strengthen the security of web applications built with the Laravel framework. Its main focus lies in the identification and remediation of vulnerabilities by applying Laravel-specific security best practices.') }}</p>
                     <ul class="mt-6 flex items-center space-x-3">
-                        <li>
+                        {{--<li>
                             <a href="https://twitter.com/laravelphp">
                                 <img id="footer__twitter_dark" class="hidden dark:inline-block w-6 h-6" src="/img/social/twitter.dark.min.svg" alt="Twitter" loading="lazy" width="24" height="20">
                                 <img id="footer__twitter" class="inline-block dark:hidden w-6 h-6" src="/img/social/twitter.min.svg" alt="Twitter" loading="lazy" width="24" height="20">
                             </a>
-                        </li>
+                        </li>--}}
                         <li>
-                            <a href="https://github.com/laravel">
+                            <a href="https://github.com/Laravel-ASAWL" target="_blank">
                                 <img id="footer__github_dark" class="hidden dark:inline-block w-6 h-6" src="/img/social/github.dark.min.svg" alt="GitHub" loading="lazy" width="24" height="24">
                                 <img id="footer__github" class="inline-block dark:hidden w-6 h-6" src="/img/social/github.min.svg" alt="GitHub" loading="lazy" width="24" height="24">
                             </a>
                         </li>
-                        <li>
+                        {{--<li>
                             <a href="https://discord.gg/mPZNm7A">
                                 <img id="footer__discord_dark" class="hidden dark:inline-block w-6 h-6" src="/img/social/discord.dark.min.svg" alt="Discord" loading="lazy" width="21" height="24">
                                 <img id="footer__discord" class="inline-block dark:hidden w-6 h-6" src="/img/social/discord.min.svg" alt="Discord" loading="lazy" width="21" height="24">
                             </a>
-                        </li>
-                        <li>
+                        </li>--}}
+                        {{--<li>
                             <a href="https://www.youtube.com/laravelphp">
                                 <img id="footer__youtube_dark" class="hidden dark:inline-block w-6 h-6" src="/img/social/youtube.dark.min.svg" alt="YouTube" loading="lazy" width="169" height="150">
                                 <img id="footer__youtube" class="inline-block dark:hidden w-6 h-6" src="/img/social/youtube.min.svg" alt="YouTube" loading="lazy" width="169" height="150">
                             </a>
-                        </li>
+                        </li>--}}
                     </ul>
                 </div>
                 <div class="mt-10 border-t pt-6 pb-16 border-gray-200 dark:border-dark-500">
                     <p class="text-xs text-gray-700 dark:text-gray-400">
-                        Laravel is a Trademark of Laravel Holdings Inc.<br />
-                        Copyright &copy; Laravel Holdings Inc.
+                        {{ __('WASAL isn\'t a Trademark of Laravel Holdings Inc.') }}<br />
+                        {{ __('Copyright &copy; WASAL.') }}
                     </p>
                     <p class="mt-6 text-xs text-gray-700 dark:text-gray-400">
-                        Code highlighting provided by <a href="https://torchlight.dev">Torchlight</a>
+                        {{ __('Design inspired by') }} <a href="https://bootcamp.laravel.com" target="_blank">Laravel Bootcamp</a>. {{ __('Code highlighting provided by') }} <a href="https://torchlight.dev">Torchlight</a>
                     </p>
                 </div>
             </div>

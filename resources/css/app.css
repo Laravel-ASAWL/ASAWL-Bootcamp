@@ -1,11 +1,9 @@
 @import "tailwindcss/base";
-
 @import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 @import '_code.css';
 @import '_sidebar-layout.css';
-
-@import "tailwindcss/utilities";
 
 /* Color mode buttons */
 #header__sun, #header__moon, #header__indeterminate { display: none; }

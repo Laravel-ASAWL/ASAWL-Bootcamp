@@ -29,7 +29,7 @@
                         </nav>
                     </div>
                     <div class="flex-grow flex flex-col justify-end">
-                        @if ($page !== __('introduction'))
+                        @if ($page !== __('welcome'))
                             <div class="hidden 2xl:block mb-12 pl-16">
                                 <x-cube delay="0" class="ml-8" />
                                 <x-cube delay="2000" class="mt-6 ml-32" />
@@ -130,7 +130,7 @@
                     <section class="pt-8 pb-8 md:pt-16 md:pb-16 flex">
                         <section class="docs_main flex-1 max-w-full">
                             <x-accessibility.main-content-wrapper>
-                                @if ($page === __('introduction'))
+                                @if ($page === __('welcome'))
                                     <div class="max-w-prose">
                                         <div class="relative -mr-22 xl:-mr-44 mb-12 sm:mb-20 xl:flex xl:justify-between xl:items-center">
                                             <div>

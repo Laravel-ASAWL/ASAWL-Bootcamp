@@ -11,10 +11,11 @@
     "Design inspired by": "Diseño inspirado en",
     "Code highlighting provided by": "Resaldado de código provisto por",
 
-    "documentation": "documentacion",
-    
+    "Welcome": "Bienvenida",
     "Introduction": "Introducción",
     "introduction": "introduccion",
-
-    "On this page": "En esta página"
+    "On this page": "En esta página",
+    
+    "documentation": "documentacion",
+    "welcome": "bienvenida"
 }

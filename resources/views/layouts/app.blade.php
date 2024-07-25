@@ -6,25 +6,25 @@
 
         <title>{{ isset($title) ? $title . ' - ' : null }}{{ __('WASAL') }}</title>
 
-        <!-- Primary Meta Tags -->
+        {{-- Primary Meta Tags --}}
         <meta name="title" content="Laravel Bootcamp - Learn the PHP Framework for Web Artisans">
         <meta name="description" content="Together let's walk through building and deploying a modern Laravel application from scratch.">
 
-        <!-- Open Graph / Facebook -->
+        {{-- Open Graph / Facebook --}}
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://bootcamp.laravel.com/">
         <meta property="og:title" content="Laravel Bootcamp - Learn the PHP Framework for Web Artisans">
         <meta property="og:description" content="Together let's walk through building and deploying a modern Laravel application from scratch.">
         <meta property="og:image" content="https://bootcamp.laravel.com/img/og-image.jpg">
 
-        <!-- Twitter -->
+        {{-- Twitter --}}
         <meta property="twitter:card" content="summary_large_image">
         <meta property="twitter:url" content="https://bootcamp.laravel.com/">
         <meta property="twitter:title" content="Laravel - Learn the PHP Framework for Web Artisans">
         <meta property="twitter:description" content="Together let's walk through building and deploying a modern Laravel application from scratch.">
         <meta property="twitter:image" content="https://bootcamp.laravel.com/img/og-image.jpg">
 
-        <!-- Favicon -->
+        {{-- Favicon --}}
         <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
@@ -36,16 +36,16 @@
         <meta name="theme-color" content="#ffffff">
         <meta name="color-scheme" content="light">
 
-        <!-- Fonts -->
+        {{-- Fonts --}}
         <link rel="stylesheet" href="https://use.typekit.net/ins2wgm.css">
 
-        <!-- Scripts & Styles -->
+        {{-- Scripts & Styles --}}
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
         @production
-            <!-- Fathom - beautiful, simple website analytics -->
-            <script src="https://cdn.usefathom.com/script.js" data-site="KRRQTWHM" defer></script>
-            <!-- / Fathom -->
+        {{-- Fathom - beautiful, simple website analytics --}}
+        <script src="https://cdn.usefathom.com/script.js" data-site="KRRQTWHM" defer></script>
+        {{-- / Fathom --}}
         @endproduction
 
         <script>

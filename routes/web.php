@@ -14,15 +14,8 @@ use Illuminate\Support\Facades\View;
 |
 */
 
-Route::redirect('/installation', '/inertia/installation');
-Route::redirect('/creating-chirps', '/inertia/creating-chirps');
-Route::redirect('/showing-chirps', '/inertia/showing-chirps');
-Route::redirect('/editing-chirps', '/inertia/editing-chirps');
-Route::redirect('/deleting-chirps', '/inertia/deleting-chirps');
-Route::redirect('/notifications-and-events', '/inertia/notifications-and-events');
-
 Route::get('/{page?}', function (string $page = '') {
-    if ($page === '') $page = __('introduccion');
+    if ($page === '') $page = __('welcome');
 
     if (View::exists($page)) {
         return view('docs', ['page' => __($page)]);

@@ -1,6 +1,10 @@
-# <b>02.1</b> Introducción al blog 💻
+# <b>02</b> Cronstucción del Blog
 
 ¡Manos a la obra, vamos a crear un blog con Laravel que sea la envidia del internet! 😎
+
+## Introducción
+
+A continuación vamos a explicar nuestra aplicación en que consiste.
 
 **1. Modelos, los pilares:**
 
@@ -32,7 +36,7 @@
 
 **7. Autenticación, el guardián:**
 
--   Laravel Breeze o Jetstream nos ayudarán a implementar la autenticación de usuarios de forma rápida y segura. ¡Nadie entrará sin permiso! 💂
+-   Laravel Jetstream nos ayudarán a implementar la autenticación de usuarios de forma rápida y segura. ¡Nadie entrará sin permiso! 💂
 
 **8. Autorización, el portero:**
 
@@ -46,4 +50,4 @@
 
 -   Escribiremos pruebas para asegurarnos de que todo funcione como debería y detectar errores antes de que los usuarios los encuentren. 🔎
 
-Siguiente paso: [Instalando Laravel 😎](./instalacion)
+Siguiente paso: [02.1 Modelos](./modelos)

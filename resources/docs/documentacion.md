@@ -1,9 +1,12 @@
 - ## [Bienvenida](/bienvenida)
 
-- ## Seguridad
-    - [Seguridad](/seguridad)
+- ## Seguridad en Laravel
+    - [Herramientas](/herramientas)
     - [Instalación](/instalacion)
-    - [Dependencias](/dependencias)
+    - [Configuración](/configuracion)
 
 - ## Construir un Blog
     - [Introducción](/introduccion)
+    - [Modelos](/modelos)
+    - [Migraciones](/migraciones)
+    - [Relaciones](/relaciones)

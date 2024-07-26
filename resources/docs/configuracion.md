@@ -81,7 +81,7 @@ code phpunit.xml
             <directory>tests/Feature</directory>
         </testsuite>
         <testsuite name="Unit">
-            <directory>tests/Feature/Database</directory>
+            <directory>tests/Unit</directory>
         </testsuite>
     </testsuites>
     <source>

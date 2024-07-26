@@ -2,7 +2,7 @@
 
 ¡Qué pasa, mi gente! ¿Listos para subir de nivel en el mundo de Laravel? 🚀
 
-Si estás aquí, es porque te interesa crear aplicaciones web increíbles, robustas y... ¡a prueba de dragones! 💪 Y eso es justo lo que vamos a lograr en este bootcamp.
+Si estás aquí, es porque te interesa crear aplicaciones web increíbles, robustas ... ¡como castillos a prueba de dragones! 💪 Y eso es justo lo que vamos a lograr en este bootcamp.
 
 Laravel es una fortaleza, un framework PHP que te da el poder de construir aplicaciones web de forma elegante y eficiente. Pero, como todo gran poder, conlleva una gran responsabilidad: la seguridad. 🛡️
 

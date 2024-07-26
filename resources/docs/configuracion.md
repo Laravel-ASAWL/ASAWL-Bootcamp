@@ -1,10 +1,13 @@
 ## <b>01.3</b> Configuración
 
-¡Afinando las defensas de nuestro castillo Laravel! 🏰⚙️
+¡Afinando las defensas de nuestro castillo! 🏰⚙️
 
 Una vez que hemos equipado nuestro castillo con las mejores herramientas de seguridad (SCA, SAST, pruebas, Pint y Telescope), es hora de configurarlas para que funcionen a la perfección. ¡Es como que nuestro castillo sea inexpugnable! 🛡️
 
+### Configuración de Larastan
+
 ```shell
+touch phpstan.neon 
 code phpstan.neon
 ```
 
@@ -19,8 +22,10 @@ parameters:
     excludePaths:
         - vendor/
 ```
+### Configuración de Phan
 
 ```bash
+touch .phan/config.php 
 code .phan/config.php
 ```
 
@@ -64,6 +69,7 @@ return [
     ],
 ];
 ```
+### Configuración de PHPUnit
 
 ```bash
 code phpunit.xml
@@ -104,8 +110,10 @@ code phpunit.xml
     </php>
 </phpunit>
 ```
+### Configuración de Laravel Pint
 
 ```shell
+touch pint.json
 code pint.json
 ```
 
@@ -123,6 +131,7 @@ code pint.json
     }
 }
 ```
+### Configuración de composer
 
 ```shell
 code composer.json
@@ -166,8 +175,8 @@ Cuando escuchemos que los dragones se acercan a tu castillo, mientras contruimos
 composer check
 ```
 
-Posterior si encuentra alguna vulnerabilidad, nos avisará con un informe detallado. ¡Vamos a corregir esos errores y a dormir tranquilos! 😴
+Posterior si encuentra algun error o vulnerabilidad, nos avisará con un informe detallado. ¡Vamos a corregir esos errores y vulnerabilidades para estar preparados 👨‍💻!
 
-¡Listo! Con estas herramientas, nuestra aplicación Laravel estará más segura que un búnker. 💪🔒
+¡Listo! Con estas configuraciones, nuestra aplicación web estará más que lista para picarle a código. 💪🔒
 
 Siguiente paso: [02. Construcción del Blog](./introduccion)

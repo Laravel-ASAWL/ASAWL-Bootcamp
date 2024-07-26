@@ -1,6 +1,6 @@
 ## <b>01.2</b> Instalación
 
-Ahora si ¡A darle caña al Laravel, mi gente! 🚀
+Ahora si ¡A darle caña al código, mis escuderos! 🛡️
 
 > **Nota:**</br>
 > Necesitarás una [versión de soportada de PHP](https://www.php.net/supported-versions.php) antes de continuar.
@@ -10,7 +10,7 @@ Ahora si ¡A darle caña al Laravel, mi gente! 🚀
 
 ### Instalación de Laravel
 
-¡Es hora de traer al escenario al framework más cool del barrio! ✨
+¡Es hora de traer al escenario al framework más cool del reino! ✨
 
 ```bash
 composer create-project laravel/laravel blog
@@ -33,11 +33,11 @@ php artisan jetstream:install livewire --dark
 php artisan migrate
 ```
 
-¡Listo! Ya tienes Laravel instalado y listo para ayudarte a crear aplicaciones web increíbles y seguras. 💪
+¡Listo! Ya tienes instalado el sistema de auteticación y adminitrador de perfiles listo para ayudarte a crear aplicaciones web increíbles y seguras. 💪
 
-### Instalación de Herramientas
+### Instalación de Herramientas de seguridad
 
-¡A blindar nuestro Laravel, mi gente! 💪🛡️
+¡A blindar nuestro castillo, mis guardianes! ⚔️
 
 #### 1. Roave/Security-Advisories, el sabio consejero
 
@@ -95,6 +95,6 @@ Este paquete te permite ver todo lo que sucede dentro de tu proyecto Laravel, de
 composer require laravel/telescope:dev-latest
 ```
 
-¡Listo! Con estas herramientas, nuestra aplicación Laravel estará más segura que un búnker. 💪🔒
+¡Listo! Con estas herramientas de desarrollo, nuestra aplicación Laravel estará más segura que un búnker. 💪🔒
 
 Siguiente paso: [01.3 Configuración](./configuracion)
